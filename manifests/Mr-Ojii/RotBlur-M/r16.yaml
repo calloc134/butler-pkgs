@@ -1,0 +1,44 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: RotBlur-M
+DisplayName: RotBlur_M AviUtl Script
+Version: r16
+ReleaseDate: 2025-04-01
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.10)
+  - exedit (= 0.92)
+  - GLShaderKit
+Recommends:
+  - LuaJIT
+InstalledSize: 7825
+Developer:
+  - Mr-Ojii
+Description: AviUtl拡張編集用、GPUを使用した高速回転ブラースクリプト
+Website:
+  - https://github.com/Mr-Ojii/AviUtl-RotBlur_M-Script
+Files:
+  - SourceUrl: https://github.com/Mr-Ojii/AviUtl-RotBlur_M-Script/releases/download/r16/RotBlur_M.zip
+    SHA256: 5b9c69d1b946e32f56ba9e5db01cd0043a27caec27ca763aea337ac2cb208ac3
+    Files:
+      - Path: LICENSE.txt
+        SHA256: 93d88a7327676f3abb8293024ff91d8dc17fa9f8372c4d05f4ed3d33c8b30009
+      - Path: Readme.md
+        SHA256: 2a5b38c09f67e497bfcdde9d092eefb0e678c0c9e5fcf2149fc4146e572f4260
+      - Path: RotBlur_M.anm
+        SHA256: ee328e4640b4b2509f667b0e739ce0b39c2a9587fccbede51bc69b05b02533a7
+        Install:
+          TargetPath: script/RotBlur_M.anm
+      - Path: RotBlur_M.frag
+        SHA256: a05059799cb2379a4f040712c7ea2de470cd9818f2ead714a9bcb07fc915ab1e
+        Install:
+          TargetPath: script/RotBlur_M.frag
+      - Path: RotBlur_M.lua
+        SHA256: 951839f85f1ceef661634de6875c61f51f77952a37029043418ea5f7c9a3b346
+        Install:
+          TargetPath: script/RotBlur_M.lua
+      - Path: Licenses/GLShaderKit.txt
+        SHA256: 0a0c62a55e3f739d0c43e36dffb314f013f180b7e23614450382b5b015910d8e
+ManifestVersion: 0.3.0

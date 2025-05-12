@@ -1,0 +1,44 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: DirBlur-M
+DisplayName: DirBlur_M AviUtl Script
+Version: r2
+ReleaseDate: 2025-04-01
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.10)
+  - exedit (= 0.92)
+  - GLShaderKit
+Recommends:
+  - LuaJIT
+InstalledSize: 7735
+Developer:
+  - Mr-Ojii
+Description: AviUtl拡張編集用、GPUを使用した高速・高精度方向ブラースクリプト
+Website:
+  - https://github.com/Mr-Ojii/AviUtl-DirBlur_M-Script
+Files:
+  - SourceUrl: https://github.com/Mr-Ojii/AviUtl-DirBlur_M-Script/releases/download/r2/DirBlur_M.zip
+    SHA256: f6a660e6780aa63c490e919c6c02488777860bdedc74d1fb520d5d63eeebf793
+    Files:
+      - Path: DirBlur_M.anm
+        SHA256: aab5f7ec3f0dc87d0d4d7a6fef916579f9b06a99f02fb2743d50446361203a47
+        Install:
+          TargetPath: script/DirBlur_M.anm
+      - Path: DirBlur_M.frag
+        SHA256: bffedb0626c7505cbdb5f45b6407632041936ef46244d4e4b2fe9ef23333792f
+        Install:
+          TargetPath: script/DirBlur_M.frag
+      - Path: DirBlur_M.lua
+        SHA256: 4e6bfffca34e6ae7633607fa87123d7599e8f9445904e443a811cdb0c37fd22e
+        Install:
+          TargetPath: script/DirBlur_M.lua
+      - Path: LICENSE.txt
+        SHA256: 90657545cf5fb868f201a3c1df69d4bb886168f571c8deb5b111034574085fc6
+      - Path: Readme.md
+        SHA256: ff19671b6fea349abe0fbc7119206037adeba8511976d649e92fb9fc36300f64
+      - Path: Licenses/GLShaderKit.txt
+        SHA256: 0a0c62a55e3f739d0c43e36dffb314f013f180b7e23614450382b5b015910d8e
+ManifestVersion: 0.3.0

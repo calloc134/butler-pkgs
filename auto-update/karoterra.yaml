@@ -45,3 +45,17 @@
     regex:
       find: ^v(.*)$
       replace: $1
+
+# https://github.com/karoterra/aviutl-GLShaderKit
+
+- Identifier: GLShaderKit
+  Developer: karoterra
+  Type: GitHub
+  Owner: karoterra
+  Repository: aviutl-GLShaderKit
+  Asset: ^aviutl_GLShaderKit_v.*\.zip$
+  Version:
+    from: tag_name
+    regex:
+      find: ^v(.*)$
+      replace: $1

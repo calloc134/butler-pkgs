@@ -70,5 +70,7 @@ Files:
         Install:
           TargetPath: script/@MotionBlur_K.anm
       - Path: AviUtl_MotionBlur_K_Script-1.0.0/shaders/MotionBlur_K.frag
+        Install:
+          TargetPath: script/shaders/MotionBlur_K.frag
         SHA256: 00019d347faee952dc6f6bba7a19b79db152a961128c4d3c1eb2729003ba9bcb
 ManifestVersion: 0.3.0

@@ -29,7 +29,9 @@ Files:
       - Path: GLShaderKit.dll
         SHA256: 1521882b050c0229649ab28ab6a715bfd09472058635d95eaeecd5d772098993
         Install:
-          TargetPath: plugins/GLShaderKit.dll
+          # インストール先を修正
+          # TargetPath: plugins/GLShaderKit.dll
+          TargetPath: GLShaderKit.dll
       - Path: GLShaderKit.ini
         SHA256: 5d5da53828255fa17107c4b4e09945318a2bf8326d9ecfe8ec067cb7a5300d67
         Install:

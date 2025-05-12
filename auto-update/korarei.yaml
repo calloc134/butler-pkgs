@@ -9,3 +9,15 @@
     regex:
       find: ^v(.*)$
       replace: $1
+
+- Identifier: MotionBlur-K
+  Developer: korarei
+  Type: GitHub
+  Owner: korarei
+  Repository: AviUtl_MotionBlur_K_Script
+  Asset: ^MotionBlur_K\.zip$
+  Version:
+    from: tag_name
+    regex:
+      find: ^v(.*)$
+      replace: $1

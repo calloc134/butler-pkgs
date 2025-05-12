@@ -1,0 +1,37 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: TrackBoundary-S
+DisplayName: TrackBoundary_S
+Version: "1.24"
+ReleaseDate: 2024-08-04
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.10)
+  - exedit (= 0.92)
+Recommends:
+  - LuaJIT
+InstalledSize: 74256
+Developer:
+  - sigma-axis
+Description: 塗りつぶし2種 / 連結成分切り抜き / 穴埋めなどができる AviUtl アニメーション効果スクリプト 8 個セット
+Website:
+  - https://github.com/sigma-axis/aviutl_script_TrackBoundary_S
+Files:
+  - SourceUrl: https://github.com/sigma-axis/aviutl_script_TrackBoundary_S/releases/download/v1.24/aviutl_script_TrackBoundary_S-v1.24.zip
+    SHA256: 74787f0a97a25a55b6aad11c1e910b61de8c1fa5684d9dcc2f391e2c12316f2c
+    Files:
+      - Path: "@TrackBoundary_S.anm"
+        SHA256: 288a1fe84b51e184c1ef960bf0ac9d4f3798dd40e67b17a0ad4d2e2c8a16258e
+        Install:
+          TargetPath: script/@TrackBoundary_S.anm
+      - Path: LICENSE
+        SHA256: 96918c717395063f07baf627af6b7ddbc31e672f887fb813380dd8176c74d057
+      - Path: README.md
+        SHA256: 2b76256245647d56067ef21c5547d15680d07dc60c1b388223a5097d195e62ab
+      - Path: TrackBoundary_S.lua
+        SHA256: 430e0d825f572a6e5d0ddc783262363775c89ebe61bfc0fd391b5c3b96338db0
+        Install:
+          TargetPath: script/TrackBoundary_S.lua
+ManifestVersion: 0.3.0

@@ -1,0 +1,11 @@
+- Identifier: MaskAnimation-K
+  Developer: korarei
+  Type: GitHub
+  Owner: korarei
+  Repository: AviUtl_MaskAnimation_K_Script
+  Asset: ^AviUtl_MaskAnimation_K_Script-.*\.zip$
+  Version:
+    from: tag_name
+    regex:
+      find: ^v(.*)$
+      replace: $1

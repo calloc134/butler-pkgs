@@ -1,0 +1,42 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: RadRotDirBlur-S
+DisplayName: RadRotDirBlur_S
+Version: "1.10"
+ReleaseDate: 2025-04-15
+Section: Script
+Architecture: x64
+Recommends:
+  - aviutl (>= 1.00)
+  - exedit (= 0.92)
+  - GLShaderKit
+Suggests:
+  - patch.aul
+InstalledSize: 33885
+Developer:
+  - sigma-axis
+Description: 放射ブラー・回転ブラー・方向ブラーを組み合わせた複合ブラー効果を適用する AviUtl スクリプト
+Website:
+  - https://github.com/sigma-axis/aviutl_script_RadRotDirBlur_S
+Files:
+  - SourceUrl: https://github.com/sigma-axis/aviutl_script_RadRotDirBlur_S/releases/download/v1.10/aviutl_script_RadRotDirBlur_S-v1.10.zip
+    SHA256: defeb7b1ae3db09b3924a65549b6f1e63082630ef3d1e0f19a289062a82b14af
+    Files:
+      - Path: LICENSE
+        SHA256: 0fbe9aa8a0045e5f6196ed404ffd524845dab3df9b5fddde255d5ce884a79439
+      - Path: RadRotDirBlur_S.anm
+        SHA256: 6fbf6ea3223fda40d0d622dc6742d2f12a2dd3871f2e9a955a616afa37c92867
+        Install:
+          TargetPath: script/RadRotDirBlur_S.anm
+      - Path: RadRotDirBlur_S.frag
+        SHA256: 4eeef71ba0d67c83f4b6f69dc2937a926d2f9ffc0a0ed09126d413c3087decfc
+        Install:
+          TargetPath: script/RadRotDirBlur_S.frag
+      - Path: RadRotDirBlur_S.lua
+        SHA256: e7f7bf4e58143bed161b63b8fe8737f60f1528e46186a5bea0c162d8723725dc
+        Install:
+          TargetPath: script/RadRotDirBlur_S.lua
+      - Path: README.md
+        SHA256: ff36cdba60f62d14e5f55dabe986a489a8a2dd58af973f4e85103ce80bc6f0dd
+ManifestVersion: 0.3.0

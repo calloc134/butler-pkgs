@@ -30,3 +30,27 @@
     regex:
       find: ^r(\d+)$
       replace: $1
+
+- Identifier: DirBlur-M
+  Developer: Mr-Ojii
+  Type: GitHub
+  Owner: Mr-Ojii
+  Repository: AviUtl-DirBlur_M-Script
+  Asset: ^DirBlur_M\.zip$
+  Version:
+    from: tag_name
+    regex:
+      find: ^r(\d+)$
+      replace: $1
+
+- Identifier: RadBlur-M
+  Developer: Mr-Ojii
+  Type: GitHub
+  Owner: Mr-Ojii
+  Repository: AviUtl-RadBlur_M-Script
+  Asset: ^RadBlur_M\.zip$
+  Version:
+    from: tag_name
+    regex:
+      find: ^r(\d+)$
+      replace: $1

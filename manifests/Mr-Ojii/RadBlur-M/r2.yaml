@@ -1,0 +1,42 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: RadBlur-M
+DisplayName: RadBlur_M AviUtl Script
+Version: r2
+ReleaseDate: 2025-04-13
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.10)
+  - exedit (= 0.92)
+  - GLShaderKit
+InstalledSize: 10247
+Developer:
+  - Mr-Ojii
+Description: AviUtl拡張編集用、GPUを使用した高速・高精度放射ブラースクリプト
+Website:
+  - https://github.com/Mr-Ojii/AviUtl-RadBlur_M-Script
+Files:
+  - SourceUrl: https://github.com/Mr-Ojii/AviUtl-RadBlur_M-Script/releases/download/r2/RadBlur_M.zip
+    SHA256: f6bfb2f4ccbd8f79b481f7db963b19dc8fef1e4270a4ef42ae0894c09cdde556
+    Files:
+      - Path: LICENSE.txt
+        SHA256: 93d88a7327676f3abb8293024ff91d8dc17fa9f8372c4d05f4ed3d33c8b30009
+      - Path: RadBlur_M.anm
+        SHA256: fff9c3b2fd6ef8871503aaa1cd6d50a57e51ad1db9cea30664920a6c1bb6cb88
+        Install:
+          TargetPath: script/RadBlur_M.anm
+      - Path: RadBlur_M.frag
+        SHA256: 294fba7500dde0b74ef520d7d67c70f13e2de4c7056cb08eede20f1407a942a7
+        Install:
+          TargetPath: script/RadBlur_M.frag
+      - Path: RadBlur_M.lua
+        SHA256: 7e8eb5cc243732e10e74b40fb6e8691039d4504827e556bfd46000642c8cdb9c
+        Install:
+          TargetPath: script/RadBlur_M.lua
+      - Path: Readme.md
+        SHA256: 372747c4b59b140646839b776c4537d916921edd635745585294d2851b5e2f4a
+      - Path: Licenses/GLShaderKit.txt
+        SHA256: 0a0c62a55e3f739d0c43e36dffb314f013f180b7e23614450382b5b015910d8e
+ManifestVersion: 0.3.0

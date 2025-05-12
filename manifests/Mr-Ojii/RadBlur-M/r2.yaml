@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
 
 Identifier: RadBlur-M
-DisplayName: RadBlur_M AviUtl Script
+DisplayName: RadBlur_M
 Version: r2
 ReleaseDate: 2025-04-13
 Section: Script

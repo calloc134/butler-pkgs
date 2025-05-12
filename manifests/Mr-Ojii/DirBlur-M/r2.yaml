@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
 
 Identifier: DirBlur-M
-DisplayName: DirBlur_M AviUtl Script
+DisplayName: DirBlur_M
 Version: r2
 ReleaseDate: 2025-04-01
 Section: Script

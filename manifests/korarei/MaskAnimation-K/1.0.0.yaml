@@ -1,0 +1,35 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: MaskAnimation-K
+DisplayName: MaskAnimation_K
+Version: 1.0.0
+ReleaseDate: 2025-04-11
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.10)
+  - exedit (= 0.92)
+InstalledSize: 10053
+Developer:
+  - korarei
+Description: テキストオブジェクトにマスクアニメーション効果を適用する AviUtl スクリプト
+Website:
+  - https://github.com/korarei/AviUtl_MaskAnimation_K_Script
+Files:
+  - SourceUrl: https://github.com/korarei/AviUtl_MaskAnimation_K_Script/archive/refs/tags/v1.0.0.zip
+    SHA256: a9a19d78fae63a69c222afc6e07741222d4970d2f02d13e159d4a45379d83d55
+    Files:
+      - Path: AviUtl_MaskAnimation_K_Script-1.0.0/.gitattributes
+        SHA256: 0004622962b1574943bb64e54e05bc4813fd124b96f2c9c4663c5fb044926502
+      - Path: AviUtl_MaskAnimation_K_Script-1.0.0/LICENSE
+        SHA256: 6d489af6292662d9e36d34ce49423784984a5f6e41d7b58f49b01264df59fa03
+      - Path: AviUtl_MaskAnimation_K_Script-1.0.0/README.md
+        SHA256: 86cdfa1c7bd0bff4e488b80fbaa7094d08c7cf10d797e72296fde511960a948a
+      - Path: AviUtl_MaskAnimation_K_Script-1.0.0/.github/workflows/releaser.yml
+        SHA256: 28a64bccde44bc07f3400d8dec26fac39421ee5b4169ddedeef3e921ead78d59
+      - Path: AviUtl_MaskAnimation_K_Script-1.0.0/script/@MaskAnimation_K.anm
+        SHA256: a66abd3aa18066ec1b56d809347627da6f0632149e1944ad8a36aa33f650c011
+        Install:
+          TargetPath: script/@MaskAnimation_K.anm
+ManifestVersion: 0.3.0

@@ -249,3 +249,15 @@
     regex:
       find: ^v(.*)$
       replace: $1
+
+- Identifier: RadRotDirBlur-S
+  Developer: sigma-axis
+  Type: GitHub
+  Owner: sigma-axis
+  Repository: aviutl_script_RadRotDirBlur_S
+  Asset: ^aviutl_script_RadRotDirBlur_S-.*\.zip$
+  Version:
+    from: tag_name
+    regex:
+      find: ^v(.*)$
+      replace: $1

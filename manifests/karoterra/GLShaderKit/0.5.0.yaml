@@ -1,0 +1,42 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: GLShaderKit
+DisplayName: GLShaderKit AviUtl Plugin
+Version: 0.5.0
+ReleaseDate: 2025-05-06
+Section: Plugin/Other
+Architecture: x86
+Depends:
+  - aviutl (>= 1.10)
+  - exedit (= 0.92)
+Recommends:
+  - patch.aul (>= r43+ss60)
+InstalledSize: 148963
+Developer:
+  - karoterra
+Description: AviUtl 拡張編集スクリプトで GLSL を使用するための DLL
+Website:
+  - https://github.com/karoterra/aviutl-GLShaderKit
+Files:
+  - SourceUrl: https://github.com/karoterra/aviutl-GLShaderKit/releases/download/v0.5.0/aviutl_GLShaderKit_v0.5.0.zip
+    SHA256: f6b1592693aaf86e5071962f597786317c6dc1ab171155ea6feb7c4f14a23636
+    Files:
+      - Path: GLShaderKit_def.lua
+        SHA256: d75bff519919d250e2bb27873062919258abb1a1b8de4915d56958c22ef5c229
+        Install:
+          TargetPath: script/GLShaderKit_def.lua
+      - Path: GLShaderKit.dll
+        SHA256: 1521882b050c0229649ab28ab6a715bfd09472058635d95eaeecd5d772098993
+        Install:
+          TargetPath: plugins/GLShaderKit.dll
+      - Path: GLShaderKit.ini
+        SHA256: 5d5da53828255fa17107c4b4e09945318a2bf8326d9ecfe8ec067cb7a5300d67
+        Install:
+          TargetPath: plugins/GLShaderKit.ini
+          ConfFile: true
+      - Path: LICENSE
+        SHA256: 0a0c62a55e3f739d0c43e36dffb314f013f180b7e23614450382b5b015910d8e
+      - Path: README.md
+        SHA256: 3ba250a9679c0336eaf8efdc03cf0497ed2ed96724b42af4c5dd5a9caba20c76
+ManifestVersion: 0.3.0

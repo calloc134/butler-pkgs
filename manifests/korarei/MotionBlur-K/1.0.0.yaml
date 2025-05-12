@@ -1,0 +1,76 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: MotionBlur-K
+DisplayName: MotionBlur_K
+Version: 1.0.0
+ReleaseDate: 2025-05-05
+Section: Script
+Architecture: x86
+Depends:
+  - aviutl (>= 1.10)
+  - exedit (= 0.92)
+  - GLShaderKit
+Suggests:
+  - rikkymodule
+InstalledSize: 88634
+Developer:
+  - korarei
+Description: オブジェクトの移動に対してモーションブラーを適用する ObjectMotionBlur スクリプトを含むモーションブラー系エフェクトのコレクション
+Website:
+  - https://github.com/korarei/AviUtl_MotionBlur_K_Script
+Files:
+  - SourceUrl: https://github.com/korarei/AviUtl_MotionBlur_K_Script/archive/refs/tags/v1.0.0.zip
+    SHA256: cbce8c038d90b66845ddfd3a899aa90d0fd35536c4d968babdc0b8f4a6a47e4f
+    Files:
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/.gitattributes
+        SHA256: 5e464bc4b9814be875e50ebdbf450ebaa7bf59a23976dc5e5437dd9ec30b8bb4
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/.gitmodules
+        SHA256: 14b29498394fbd8fba2150e0e3f22009ab00795922480ad665cd26a54f085031
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/LICENSE
+        SHA256: 58eb25523442488aa6beced98b77618b5ee1331c61ebef33a5ae6ab714653c0c
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/README.md
+        SHA256: c9fdff1d382fcff83a47298749c61d3e44f11a639f3444cddbeceebe815594ff
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/.github/workflows/releaser.yml
+        SHA256: 43e3e10f88dc84b30b2f8c482609b78381b3587ac13017d9a3b6ffff0f3c2262
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/.clang-format
+        SHA256: 5686c067537f8689eddad2ac8c3b9ebca61b4df8a4a047a7ef4f45cde730b557
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/aul_utils.cpp
+        SHA256: 7209b97870d4b4a257cd30b5de0f4f0c015a90e8bb7540690c1fc87919489fd2
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/aul_utils.hpp
+        SHA256: 14d29abd8fb1e4f609e9df95a72cff31f914bf81bc5e523bc99172440174a86a
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/CMakeLists.txt
+        SHA256: aad869a6a658daabf4c89582fc24838916bf658aff0a2705738bb1584ab87dbe
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/lua_func.cpp
+        SHA256: c99a061f17b8c627144ac4228081520b976b5088347d63251667039dd4ef76d7
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/lua_func.hpp
+        SHA256: c18231d14300f65b51556f6690727a2453e8b62034e4964667bf1b06ab304727
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/main.cpp
+        SHA256: deceba6d206726ed80ae969a1ed080d63e7500cb1cb42564623946f87faa0ebb
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/main.def
+        SHA256: 2a026c99bd1ed0d51dff9200883efc921e65946c8f91cd0d626b067ccef37669
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/object_motion_blur.cpp
+        SHA256: 29738fba1e7887ef52c04f0a5555c5eb6408a734c7f8b03b10d030f6c7e40ac4
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/object_motion_blur.hpp
+        SHA256: 72be2f83a4845bd3542afd8ae42bfa9a8d2b5ddba56d99a5fefe3dcddf430bc7
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/shared_memory.cpp
+        SHA256: 92b8a2ab2f660c319f92ad293141569ebc1000f647fed0aa5568d91d09d80c27
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/shared_memory.hpp
+        SHA256: afd6df57403723639781bb4771855aa43788798f160838334b8213df1a6891fa
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/structs.hpp
+        SHA256: a79458f3a606990bb19d24cf953664b9a039b02ccec6d32e0e8a4ec5151218ef
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/transform_utils.cpp
+        SHA256: 5e2c053de37eb94c78a50a0245bcc404b80349aba6bed551877d114c69891c45
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/transform_utils.hpp
+        SHA256: 7bb2c0e11835cbbb58dfaa7fd3b3da576b97824875f0e839c5cd7f663d5de0e3
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/dll_src/vector_2d.hpp
+        SHA256: 28cf698c498486d4d83d28ffd3f253127ec30112808171798ae025fc5b5752f5
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/script/@MotionBlur_K.anm
+        SHA256: c7743f76cd1bddd946f64def2a90b56dc3b3a41ae324bfc698a172c51334d20d
+        Install:
+          TargetPath: script/@MotionBlur_K.anm
+      - Path: AviUtl_MotionBlur_K_Script-1.0.0/shaders/MotionBlur_K.frag
+        Install:
+          TargetPath: script/shaders/MotionBlur_K.frag
+        SHA256: 00019d347faee952dc6f6bba7a19b79db152a961128c4d3c1eb2729003ba9bcb
+ManifestVersion: 0.3.0

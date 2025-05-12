@@ -11,6 +11,8 @@ Depends:
   - aviutl (>= 1.10)
   - exedit (= 0.92)
   - GLShaderKit
+Recommends:
+  - LuaJIT
 InstalledSize: 7735
 Developer:
   - Mr-Ojii

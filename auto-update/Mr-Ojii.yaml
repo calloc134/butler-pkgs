@@ -18,3 +18,15 @@
   Asset: ^MotionTrackingMKIIPlus(?:-AVX)?\.zip$
   Version:
     from: tag_name
+
+- Identifier: RotBlur-M
+  Developer: Mr-Ojii
+  Type: GitHub
+  Owner: Mr-Ojii
+  Repository: AviUtl-RotBlur_M-Script
+  Asset: ^RotBlur_M\.zip$
+  Version:
+    from: tag_name
+    regex:
+      find: ^r(\d+)$
+      replace: $1

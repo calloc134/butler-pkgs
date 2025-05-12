@@ -1,0 +1,40 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: AutoBlur-K
+DisplayName: AutoBlur_K
+Version: 1.2.0
+ReleaseDate: 2025-03-13
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.10)
+  - exedit (= 0.92)
+  - Tim-RotBlur
+  - RotBlur-M
+  - DirBlur-M
+Recommends:
+  - LuaJIT
+InstalledSize: 25869
+Developer:
+  - korarei
+Description: 自動で方向ブラー、放射ブラー、回転ブラーをかけるスクリプト
+Website:
+  - https://github.com/korarei/AviUtl_AutoBlur_K_Script
+Files:
+  - SourceUrl: https://github.com/korarei/AviUtl_AutoBlur_K_Script/releases/download/v1.2.0/AutoBlur_K_v1.2.0.zip
+    SHA256: 32978d5ba169ebdce820026b46c8cc042a52d0f077195253ed04b5bcd2035a4b
+    Files:
+      - Path: script/AutoBlur_K.anm
+        SHA256: 5b9bacc2174c7eccc9296f078647d3a1b5490bd4e1233bb8d944f5bda4c2d8b6
+        Install:
+          TargetPath: script/AutoBlur_K.anm
+      - Path: script/LICENSE
+        SHA256: 0561d171d83a78ea7a7914a93a97ec0d329bd80c6a2529d54dc036914baa64d5
+        Install:
+          TargetPath: script/LICENSE
+      - Path: script/README.md
+        SHA256: 0a2312bc55253dbb5e004030ab5e7f55103362eed1c583b86f87995757aab54e
+        Install:
+          TargetPath: script/README.md
+ManifestVersion: 0.3.0

@@ -21,3 +21,15 @@
     regex:
       find: ^v(.*)$
       replace: $1
+
+- Identifier: AutoBlur-K
+  Developer: korarei
+  Type: GitHub
+  Owner: korarei
+  Repository: AviUtl_AutoBlur_K_Script
+  Asset: ^AutoBlur_K_v.*\.zip$
+  Version:
+    from: tag_name
+    regex:
+      find: ^v(.*)$
+      replace: $1

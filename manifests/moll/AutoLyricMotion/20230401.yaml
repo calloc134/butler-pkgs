@@ -1,0 +1,26 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: AutoLyricMotion
+DisplayName: AutoLyricMotion
+Version: "20230401"
+ReleaseDate: 2023-04-01
+Section: Script
+Architecture: x86
+Depends:
+  - aviutl (>= 1.10)
+  - exedit (= 0.92)
+  - CurveEditor
+InstalledSize: 1715
+Developer:
+  - moll
+Description: テキストに全自動でリリックモーションを付けるテキストアニメーションスクリプト
+Website:
+  - https://seguimiii.com/aviutl-tech/autolyricmotion
+Files:
+  - SourceUrl: https://drive.google.com/uc?id=1yhZJbZv4k2TbYY3kJVdxJW31lEl-_HH1
+    FileName: 全自動リリックモーション.anm
+    SHA256: 8d3dd0c63d84908f3b8b9b5eec9a601ad79270032a6c035a476aa2750c0623dc
+    Install:
+      TargetPath: script/全自動リリックモーション.anm
+ManifestVersion: 0.3.0

@@ -1,0 +1,26 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: Halftone-g
+DisplayName: ハーフトーン(g)
+Version: "20210411"
+ReleaseDate: 2021-04-11
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.00)
+  - exedit (= 0.92)
+  - LuaJIT
+InstalledSize: 3294
+Developer:
+  - gometh
+Description: LuaJIT 対応のハーフトーン（網点）エフェクトスクリプト
+Website:
+  - https://www.nicovideo.jp/watch/sm38565819
+Files:
+  - SourceUrl: https://drive.google.com/uc?id=15XzLv2lry9dN_rMF6E3ZrOr2AHWyZZdi
+    FileName: ハーフトーン(g).anm
+    SHA256: 2d4bc0818003b5b94d2c4a2da4bafc6bb3598f741dabefaf02b7d22afbea3f21
+    Install:
+      TargetPath: script/ハーフトーン(g).anm
+ManifestVersion: 0.3.0

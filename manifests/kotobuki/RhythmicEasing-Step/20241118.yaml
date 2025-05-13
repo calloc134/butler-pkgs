@@ -1,0 +1,25 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: RhythmicEasing-Step
+DisplayName: リズミカルイージング ステップ
+Version: "20241118"
+ReleaseDate: 2024-11-18
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.00)
+  - exedit (= 0.92)
+InstalledSize: 1618
+Developer:
+  - kotobuki
+Description: 拍数で分割したステップ数に応じて等分・段階的に動かすステップ動作スクリプト
+Website:
+  - https://www.nicovideo.jp/watch/sm44336458
+Files:
+  - SourceUrl: https://drive.google.com/uc?id=1pPAoOTvXXljpn4FjbrtNoFCPeZxhio_e
+    FileName: "@ステップ.tra"
+    SHA256: 0ab385676f5555a2d87b10a9284cd05dd664a04dfbe43c31d768c802bc33072d
+    Install:
+      TargetPath: script/@ステップ.tra
+ManifestVersion: 0.3.0

@@ -1,0 +1,35 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: Dimensionize-R
+DisplayName: 立体化(R)
+Version: "20150807"
+ReleaseDate: 2015-08-07
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.00)
+  - exedit (>= 0.92)
+  - rikkymodule
+InstalledSize: 128294
+Developer:
+  - rikky
+Description: テキストや画像、オブジェクトに厚みを持たせて立体化するアニメーション効果スクリプト
+Website:
+  - https://www.nicovideo.jp/watch/sm26877964
+Files:
+  - SourceUrl: https://hazumurhythm.com/php/amazon_download.php?name=%E7%AB%8B%E4%BD%93%E5%8C%96(R)1Sm
+    FileName: 立体化(R).zip
+    SHA256: 8d5b9b0b8cedc9b516e04cb60059421e56a66a00e61b547d88578ef2b5fb4f97
+    Files:
+      - Path: 立体化/立体化(R).anm
+        SHA256: fc5583427f0572dc6efbb53a473ed159704edb85822f1b62916d603d343b3991
+        Install:
+          TargetPath: script/立体化(R).anm
+      - Path: 立体化/rikky_module ver1用/dimensionize.dll
+        SHA256: 9b619b195a5609be86b576c7c5aa7a8285d7762ce356979b413659be637c661f
+        Install:
+          TargetPath: script/dimensionize.dll
+      - Path: 立体化/rikky_module ver2用/dimensionize.dll
+        SHA256: 3e9fa8199f3269db8b6c01c68aaf5d958c1ab63c64b05c088e51ba047da0edd7
+ManifestVersion: 0.3.0

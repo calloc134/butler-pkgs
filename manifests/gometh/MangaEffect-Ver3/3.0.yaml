@@ -1,0 +1,39 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: MangaEffect-Ver3
+DisplayName: 漫画化エフェクト Ver.3
+Version: "3.0"
+ReleaseDate: 2021-10-31
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.00)
+  - exedit (= 0.92)
+  - LuaJIT
+InstalledSize: 22869
+Developer:
+  - gometh
+Description: トーン画像不要・LuaJIT対応・背景透過も可能な漫画風エフェクトスクリプト Ver.3
+Website:
+  - https://www.nicovideo.jp/watch/sm39560082
+Files:
+  - SourceUrl: https://drive.google.com/uc?id=13AZYerMDciBtK7-jvTttbMo0RKw-H8bV
+    FileName: 漫画化v3.zip
+    SHA256: 10ed7e4327aec9761e7a54b8d0e17fd6b80d5e5239a1550b1c825a72fb14370a
+    Files:
+      - Path: 漫画化v3/@漫画化v3.anm
+        SHA256: fa41d03986e27188aa316706897c937ea96d2ba95bb7b1b7b997afa1d0304bc5
+        Install:
+          TargetPath: script/@漫画化v3.anm
+      - Path: 漫画化v3/@漫画化v3トーン定義.anm
+        SHA256: 711ab9f30d33333ba95df7d19a7fbb69fbba2c12536d0070ef6fea624375d62b
+        Install:
+          TargetPath: script/@漫画化v3トーン定義.anm
+      - Path: 漫画化v3/readme.txt
+        SHA256: 650389f238c62a5d2e8a99046b1f7aa9c5ff97adc7b5541dfe695fc7c1288c81
+      - Path: 漫画化v3/漫画化v3トーン定義.exa
+        SHA256: fcf2663c0253a022dafc2ac10b64c373c537442e6db344967b0e0587b0f603e7
+        Install:
+          TargetPath: 漫画化v3/漫画化v3トーン定義.exa
+ManifestVersion: 0.3.0

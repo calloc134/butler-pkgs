@@ -1,0 +1,32 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: SmoothDimension
+DisplayName: 滑らか立体化スクリプト
+Version: "20220530"
+ReleaseDate: 2022-05-30
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.00)
+  - exedit (>= 0.92)
+InstalledSize: 8260
+Developer:
+  - gometh
+Description: 輪郭線を小数点単位で追跡してオブジェクトを滑らかに立体化するスクリプト
+Website:
+  - https://www.nicovideo.jp/watch/sm40545139
+Files:
+  - SourceUrl: https://drive.google.com/uc?id=1Dx68Fa_mN4_eHogEB_x1zj6RrkFZx2Uc
+    FileName: 立体化(g).zip
+    SHA256: 70eacae601b5a2936a01a1416e969240008098f2ebbd53efe9649478d7719f05
+    Files:
+      - Path: bordering.lua
+        SHA256: a6572e02eaddda13fd927f0ab2b632389942d50f322d19b34976156f020162d4
+        Install:
+          TargetPath: script/bordering.lua
+      - Path: 立体化(g).anm
+        SHA256: 7359a8e0c9748393522454af627961b95db96d146302c8f46f923ac03a882c92
+        Install:
+          TargetPath: script/立体化(g).anm
+ManifestVersion: 0.3.0

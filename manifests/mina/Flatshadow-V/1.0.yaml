@@ -1,0 +1,26 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: Flatshadow-V
+DisplayName: Flatshadow_V
+Version: "1.0"
+ReleaseDate: 2021-08-12
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.00)
+  - exedit (= 0.92)
+  - rikkymodule
+InstalledSize: 5665
+Developer:
+  - mina
+Description: 画像や動画をフラットシャドウ風に処理するスクリプト
+Website:
+  - https://www.youtube.com/watch?v=ZdcTaaTcEiY
+Files:
+  - SourceUrl: https://drive.google.com/uc?id=1qbBPedVBK-KWhhKF9OqH2rxAAL5_sT-g
+    FileName: FlatShadow_V.anm
+    SHA256: b3c0c658670b1e19bed72bc877174ccf20d5454e262c64417b9fb6a909d2e757
+    Install:
+      TargetPath: script/FlatShadow_V.anm
+ManifestVersion: 0.3.0

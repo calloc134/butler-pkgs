@@ -1,8 +1,8 @@
 # Created using CreateManifest.ps1 v0.3.0
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
 
-Identifier: Halftone-LuaJIT
-DisplayName: ハーフトーンスクリプト (LuaJIT)
+Identifier: Halftone-g
+DisplayName: ハーフトーン(g)
 Version: "20210411"
 ReleaseDate: 2021-04-11
 Section: Script

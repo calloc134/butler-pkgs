@@ -1,0 +1,25 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: RhythmicEasing-Loop
+DisplayName: リズミカルイージング 往復
+Version: "20241118"
+ReleaseDate: 2024-11-18
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.00)
+  - exedit (= 0.92)
+InstalledSize: 2915
+Developer:
+  - kotobuki
+Description: BPM 指定で 2 つの値を行き来（往復）するイージング動作スクリプト
+Website:
+  - https://www.nicovideo.jp/watch/sm44336458
+Files:
+  - SourceUrl: https://drive.google.com/uc?id=1xuoMKGN2UHooWJOwLzfbgMhago88lsjt
+    FileName: "@往復.tra"
+    SHA256: ea7acd185bd83a419a033da247db8e6bd5aac45b18556ab47e38f4fe4684df9f
+    Install:
+      TargetPath: script/@往復.tra
+ManifestVersion: 0.3.0

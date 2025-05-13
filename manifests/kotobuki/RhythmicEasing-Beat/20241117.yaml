@@ -1,0 +1,25 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: RhythmicEasing-Beat
+DisplayName: リズミカルイージング ビート
+Version: "20241117"
+ReleaseDate: 2024-11-17
+Section: Script
+Architecture: x64
+Depends:
+  - aviutl (>= 1.00)
+  - exedit (= 0.92)
+InstalledSize: 3932
+Developer:
+  - kotobuki
+Description: BPM を入力することで、拍に合わせて動きを繰り返すビート動作スクリプト
+Website:
+  - https://www.nicovideo.jp/watch/sm44336458
+Files:
+  - SourceUrl: https://drive.google.com/uc?id=1ctGmZYMEGSdlF-JOZWbBa-DYPC-vHHwE
+    FileName: "@ビート.tra"
+    SHA256: c7ac8bb34c32d0f9c986c12e20577063bcc2c23f650b9d0d228fe70ddaf3ffc0
+    Install:
+      TargetPath: script/@ビート.tra
+ManifestVersion: 0.3.0

@@ -1,0 +1,42 @@
+# Created using CreateManifest.ps1 v0.3.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Per-Terra/butler-pkgs/main/schemas/JSON/manifest/0.3.0.json
+
+Identifier: MotionBlur-K
+DisplayName: MotionBlur_K AviUtl Script
+Version: 1.1.0
+ReleaseDate: 2025-09-03
+Section: Script
+Architecture: x86
+Depends:
+- aviutl (>= 1.10)
+- exedit (= 0.92)
+- GLShaderKit
+Suggests:
+- rikkymodule
+InstalledSize: 298107
+Developer:
+- korarei
+Description: モーションブラー系エフェクトを集めたスクリプト
+Website:
+- https://github.com/korarei/AviUtl_MotionBlur_K_Script
+Files:
+- SourceUrl: https://github.com/korarei/AviUtl_MotionBlur_K_Script/releases/download/v1.1.0/MotionBlur_K.zip
+  SHA256: 8c116e1169bda069b85847139f5d892cce0b6b984012fb125fce75a8de18348a
+  Files:
+  - Path: '@MotionBlur_K.anm'
+    SHA256: c7743f76cd1bddd946f64def2a90b56dc3b3a41ae324bfc698a172c51334d20d
+    Install:
+      TargetPath: script/@MotionBlur_K.anm
+  - Path: LICENSE
+    SHA256: 49dc68c3bbf29356f5bcde96f11b80907168e824ad0faccf3530261ea09d4be1
+  - Path: MotionBlur_K.dll
+    SHA256: 1005279f3819991f44ae87ebaa5e455b8e5d656364a296a5e4be74b24f52aead
+    Install:
+      TargetPath: script/MotionBlur_K.dll
+  - Path: README.md
+    SHA256: 5b7c94612656e1116123c0bf69b4f38590ecf406058dcb9d324438f6de823f2b
+  - Path: shaders/MotionBlur_K.frag
+    SHA256: 21fb6ae3239592c606dae1c75788985939baea1767d119f80076cb83736e24f3
+    Install:
+      TargetPath: script/shaders/MotionBlur_K.frag
+ManifestVersion: 0.3.0
